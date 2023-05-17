@@ -1,8 +1,6 @@
-FROM python:3.11-alpine
-LABEL maintainer="nasir@nasir.id"
-copy . /app
+FROM python:3
+ADD . /app
 WORKDIR /app
+RUN apt-get update
 RUN pip install -r requirements.txt
-EXPOSE 1001
-ENTRYPOINT ["python"]
-CMD ["qr-generator.py"]
+CMD python app.py
