@@ -10,5 +10,5 @@ docker-compose up -d
 You also can run simple version 
 ```
 pip install pyqrcode
-python python-qr-generator.py
+python qr-generator.py
 ```
