@@ -12,3 +12,5 @@ You also can run simple version
 pip install pyqrcode
 python qr-generator.py
 ```
+
+Working port 1002, you can change accordingly
